@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<body style="text-align: center; margin-top: 40px; float: left;">
+    <div>
+        <input type="button" onclick="loadMatrix()" value="Load" style="font-size: 40px; margin-top: 40px;" />
+    </div>
+    <div>
+        <div style="font-size: 66px; float: left;">
+            [
+        </div>
+        <div style="float: left;" id="Matrix_1">
+            <div>
+                <span id="m1_00"></span>
+                <span id="m1_01"></span>
+                <span id="m1_02"></span>
+                <span id="m1_03"></span>
+            </div>
+            <div>
+                <span id="m1_10"></span>
+                <span id="m1_11"></span>
+                <span id="m1_12"></span>
+                <span id="m1_13"></span>
+            </div>
+            <div>
+                <span id="m1_20"></span>
+                <span id="m1_21"></span>
+                <span id="m1_22"></span>
+                <span id="m1_23"></span>
+            </div>
+            <div>
+                <span id="m1_30"></span>
+                <span id="m1_31"></span>
+                <span id="m1_32"></span>
+                <span id="m1_33"></span>
+            </div>
+        </div>
+        <div style="font-size: 66px; float: left;">
+            ]
+        </div>
+        <div style="font-size: 66px; float: left;">
+            [
+        </div>
+        <div style="float: left;" id="Matrix_2">
+            <div>
+                <span id="m2_00"></span>
+                <span id="m2_01"></span>
+                <span id="m2_02"></span>
+                <span id="m2_03"></span>
+            </div>
+            <div>
+                <span id="m2_10"></span>
+                <span id="m2_11"></span>
+                <span id="m2_12"></span>
+                <span id="m2_13"></span>
+            </div>
+            <div>
+                <span id="m2_20"></span>
+                <span id="m2_21"></span>
+                <span id="m2_22"></span>
+                <span id="m2_23"></span>
+            </div>
+            <div>
+                <span id="m2_30"></span>
+                <span id="m2_31"></span>
+                <span id="m2_32"></span>
+                <span id="m2_33"></span>
+            </div>
+        </div>
+        <div style="font-size: 66px; float: left;">
+            ]
+        </div>
+        <div style="font-size: 66px; float: left;">
+            =
+        </div>
+        <div style="font-size: 66px; float: left;">
+            [
+        </div>
+        <div style="float: left;" d>
+            <div>
+                <span id="r_00"></span>
+                <span id="r_01"></span>
+                <span id="r_02"></span>
+                <span id="r_03"></span>
+            </div>
+            <div>
+                <span id="r_10"></span>
+                <span id="r_11"></span>
+                <span id="r_12"></span>
+                <span id="r_13"></span>
+            </div>
+            <div>
+                <span id="r_20"></span>
+                <span id="r_21"></span>
+                <span id="r_22"></span>
+                <span id="r_23"></span>
+            </div>
+            <div>
+                <span id="r_30"></span>
+                <span id="r_31"></span>
+                <span id="r_32"></span>
+                <span id="r_33"></span>
+            </div>
+        </div>
+        <div style="font-size: 66px; float: left;">
+            ]
+        </div>
+    </div>
+    <div>
+        <input type="button" id="hw" onclick="matrixMulCalculate()" value="Calculate" style="font-size: 40px; margin-top: 40px;" />
+    </div>
+    <script type="text/javascript" src="multiplicaFunc.js"></script>
+</body>
+
+</html>
