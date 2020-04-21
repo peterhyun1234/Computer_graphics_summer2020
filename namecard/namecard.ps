@@ -1,0 +1,107 @@
+%!
+/border {
+-127.5 -71 moveto
+-127.5 71 lineto
+127.5 71 lineto
+127.5 -71 lineto
+closepath
+0 setlinewidth
+stroke
+} def
+
+/symbol {
+0 0 moveto
+0 20 lineto
+20 20 lineto
+20 0 lineto
+closepath
+0.3 setgray
+gsave
+0.1 setlinewidth
+stroke
+grestore
+} def
+
+/symbol2 {
+0 0 moveto
+0 20 lineto
+20 20 lineto
+closepath
+0.3 setgray
+gsave
+0.1 setlinewidth
+stroke
+grestore
+} def
+
+/rectangle {
+-120 -76 moveto
+-120 76 lineto
+-113 76 lineto
+-113 -76 lineto
+closepath
+0.8 setgray fill
+} def
+
+/blueline {
+-95 33 moveto
+-95 34 lineto
+95 34 lineto
+95 33 lineto
+closepath
+0 0 1 setrgbcolor fill
+} def
+
+300 400 translate
+border
+5 {rectangle 
+10 0 translate
+} repeat 
+
+
+gsave
+40 -8 translate
+
+100 {symbol
+15 15 translate
+30 rotate
+.93 .93 scale
+0.9 0.7 0.7 setrgbcolor
+fill
+} repeat
+grestore
+
+gsave
+40 -8 translate
+
+100 {symbol2
+-15 -10 translate
+40 rotate
+.93 .93 scale
+0.7 0.7 0.9 setrgbcolor
+fill
+} repeat
+grestore
+
+-50 0 translate
+
+/Times-Roman findfont
+0 setgray
+20 scalefont setfont
+0
+(Postscript Programmer) stringwidth pop sub
+2 div
+35 moveto
+(Postscript Programmer) show
+blueline
+
+/Times-Roman findfont
+0 setgray
+20 scalefont setfont
+0
+(Hyunbin Jeon) stringwidth pop sub
+2 div
+-45 moveto
+(Hyunbin Jeon) show
+
+showpage
