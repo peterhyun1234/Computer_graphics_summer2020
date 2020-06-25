@@ -1,0 +1,18 @@
+/box {
+    0 0 moveto
+    100 0 lineto
+    100 100 lineto
+    0 100 lineto
+    closepath
+    stroke %fill
+} def
+
+box 
+gsave
+25 25 translate
+box
+grestore
+0.5 0.5 scale
+box
+stroke
+showpage
